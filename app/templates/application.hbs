@@ -1,3 +1,45 @@
-<h2 id="title">Welcome to Ember</h2>
-
+{{#link-to "index" }}<div class="logo"></div>{{/link-to}}
+{{#link-to "admin" class="admin-link"}}Admin{{/link-to}}
+<section id="NavSection">
+<nav>
+	{{#link-to "about"}}
+	<div class="nav-link">
+		<span>About</span>
+		<div class="underline"></div>
+	</div>{{/link-to}}
+	{{#link-to "services"}}
+	<div class="nav-link">
+		<span>Services</span>
+		<div class="underline"></div>
+	</div>{{/link-to}}
+	{{#link-to "portfolio"}}
+	<div class="nav-link">
+		<span>Portfolio</span>
+		<div class="underline"></div>
+	</div>{{/link-to}}
+	{{#link-to "blog"}}
+	<div class="nav-link">
+		<span>Blog</span>
+		<div class="underline"></div>
+	</div>{{/link-to}}
+	{{#link-to "contact"}}
+	<div class="nav-link">
+		<span>Contact</span>
+		<div class="underline"></div>
+	</div>{{/link-to}}
+	{{#link-to "testimonials"}}
+	<div class="nav-link">
+		<span>Testimonials</span>
+		<div class="underline"></div>
+	</div>{{/link-to}}
+</nav>
+</section>
+<section>
+<main>
 {{outlet}}
+</main>
+<aside>
+<img src="./assets/img/photo_1.JPG" alt="image">
+</aside>
+</section>
+<div id="Footer">Copyright &copy; {{getYear}} Design Minted, LLC. All Rights Reserved</div>

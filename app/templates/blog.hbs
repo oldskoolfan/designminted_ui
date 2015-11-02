@@ -1,0 +1,24 @@
+<h1>Blog</h1>
+{{#each model as |blog|}}
+<h3>{{blog.blogTitle}}</h3>
+<div class="body">
+{{#each blog.contents as |content|}}
+	{{#if content.isText}}
+	<p>{{{content.contentText}}}</p>
+	{{/if}}
+	{{#if content.isImage}}
+	<div class="img-wrapper">
+	<img src="http://localhost:8888/get-img/{{content.id}}" alt="image">
+	</div>
+	{{/if}}
+{{/each}}
+</div>
+<hr>
+<div class="comment-section">
+	<h4>Comments</h4>
+	{{#each blog.comments as |comment|}}
+	<div class="comment">{{comment.commentText}}</div>
+	{{/each}}
+</div>
+<br><br>
+{{/each}}

@@ -1,0 +1,6 @@
+<div class="form-row">
+	<label>Image:</label>
+	<input type="file" {{bind-attr id=view.bindingId}} 
+		{{action "readFile" view.bindingId on="change"}}>
+	<i class="fa fa-close fa-lg" {{action "removeSection" view.sId}}></i>
+</div>

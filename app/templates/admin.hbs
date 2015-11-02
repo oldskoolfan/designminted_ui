@@ -1,0 +1,40 @@
+<div id="Admin" {{bind-attr class="viewstate"}}>
+	<div class="nav-panel">
+		<div class="nav-link new selected" {{action "togglePanels" "new"}}>NEW BLOG</div>
+		<div class="nav-link edit" {{action "togglePanels" "edit"}}>EDIT BLOGS</div>
+	</div>
+	<div class="new-form">
+	{{!--<h1>New Blog</h1>--}}
+	<div class="content-form">
+		<div class="form-row">
+		<label>Title:</label>{{input id="Title" type="text" value=title}}
+		</div>
+		{{!more rows will go here}}
+		{{!view container}}
+	</div>
+	<hr>
+	<div class="form-row">
+		<input type="button" value="ADD SECTION" {{action "addSection"}}>
+		{{!view "select" content=contentTypes optionValuePath="content.id" 
+			optionLabelPath="content.typeName" selection=selectedType}}
+	</div>
+	<hr>
+
+	<input id="SaveBlog" type="button" value="SAVE" {{action "saveBlog"}}>
+	</div>
+	<div class="edit-form">
+	{{!--<h1>All Blogs</h1>--}}
+	{{#each blog in blogs}}
+	<div class="blog-row">
+		<div>
+			<h2>{{blog.blogTitle}}</h2>
+			<input type="button" value="DELETE" {{action "deleteBlog" blog.id}}>
+			<input type="button" value="EDIT">		
+			<span>{{getPubDate blog.pubDate}}</span>	
+		</div>
+		
+	</div>
+	{{/each}}
+	</div>
+	<h4>{{message}}</h4>
+</div>

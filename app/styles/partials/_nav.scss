@@ -1,0 +1,44 @@
+@media (min-width: $wideScreenBkpt) {
+	nav {
+		@include span-columns(9);
+		//@include shift(2);
+	}
+}
+
+@media (min-width: $mobileBkpt) and (max-width: $smallScreenBkpt) {
+	#NavSection {
+		max-width: 745px;
+		margin: 0 auto;
+	}
+}
+
+
+nav {
+	margin-top: 200px;
+	a {
+		display: inline-block;
+		text-decoration: none;
+		font: inherit;
+		font-size: 1.2em;
+		color: $darkGrayText;
+		&:hover {
+			color: $mainOrange;
+		}
+		.nav-link {
+			text-align: center;
+			padding: 0 20px;
+			span {
+				display: block;
+				padding: 5px;
+			}
+			.underline {
+				background-image: url('/assets/img/underline.png');
+				height: 6px;
+				width: 100%;
+			}
+		}
+		&.active {
+			.underline { background-image: url('/assets/img/underline-highlight.png'); }
+		}
+	}
+}

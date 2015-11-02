@@ -1,0 +1,75 @@
+$mobileBkpt: 599px;
+$notMobileBkpt: 600px;
+$desktopBkpt: 980px;
+$smallScreenBkpt: 1229px;
+$wideScreenBkpt: 1230px;
+
+h1 {
+	font-weight: normal;
+	margin-top: 0;
+}
+
+body { 
+	@include outer-container;
+	background-color: $bkgdGray; 
+	font: 1em "Aleo";
+	color: $darkGrayText;
+	a { @include link-reset; }
+}
+
+.admin-link { float: right; }
+
+@media (min-width: $notMobileBkpt) and (max-width: $desktopBkpt) {
+	body { 
+		min-width: $desktopBkpt; 
+	}
+}
+
+.logo {
+	@include span-columns(3);
+	margin: 20px auto;
+	background-image: url('/assets/img/logo_2.png');
+	height: 250px;
+	width: 250px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+aside {
+	text-align: center;
+	padding-top: 50px;
+	img { //transform: rotate(90deg); 
+		height: 350px; 
+		display: block;
+		@include add-border($style:outset, $width:3px, $radius:3px);
+	}
+}
+
+@media (min-width: $notMobileBkpt) {
+	section {
+		&:not(#NavSection) { min-height: 333px; }
+		margin-top: 30px;
+		@include outer-container;
+	}
+}
+
+@media (min-width: $wideScreenBkpt) {
+	section {
+		aside { @include span-columns(4); }
+		main { @include span-columns(8); }
+	}
+}
+
+@media (max-width: $smallScreenBkpt) {
+	section {
+		aside { display: none; }
+	}
+}
+
+@media (min-width: $notMobileBkpt) and (max-width: $smallScreenBkpt) {
+	section:not(#NavSection) {
+		margin-left: 60px;
+		margin-right: 60px;
+		padding-right: 30px;
+	}
+}
