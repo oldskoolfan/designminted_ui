@@ -2,7 +2,7 @@
 
 cd ~/EmberProjects/design-minted/app
 
-find styles -path styles/vendor -prune -o -name '*.scss' | while read f;
+find styles -type d \( -name bourbon -o -name neat \) -prune -o -name '*.scss' | while read f;
 do
 	echo "Processing $f file..."
 	filename="${f##*/}"
