@@ -1,0 +1,1 @@
+export default Em.Helper.helper(() => new Date().getFullYear());
