@@ -1,1 +1,24 @@
-{{outlet}}
+<h1>Create a New User</h1>
+<h3>{{msg}}</h3>
+<section id="NewUserForm">
+<div class="form-row">
+	<label for="username">Username:</label>
+	{{input value=username name="username"}}
+</div>
+<div class="form-row">
+	<label for="email">Email:</label>
+	{{input value=email name="email"}}
+</div>
+<div class="form-row">
+	<label for="pass">Password:</label>
+	{{input type="password" name="pass" value=password}}
+</div>
+<div class="form-row">
+	<label for="confirm">Confirm password:</label>
+	{{input type="password" name="confirm" value=confirm}}
+</div>
+<div class="form-row">
+	<button {{action "cancel"}}>Cancel</button>
+	<button {{action "submitUserForm"}}>Create User</button>
+</div>
+</section>

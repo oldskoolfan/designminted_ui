@@ -12,8 +12,9 @@ Router.map(function() {
   this.route('blog');
   this.route('contact');
   this.route('testimonials');
-  this.route('admin');
   //this.route('homepage', {path: '/'});
+  this.route('new-user');
+  this.route('login');
 });
 
 export default Router;

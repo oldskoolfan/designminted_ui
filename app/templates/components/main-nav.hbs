@@ -1,5 +1,10 @@
 {{#link-to "index" }}<div class="logo"></div>{{/link-to}}
-{{!--#link-to "admin" class="admin-link"}}Admin{{/link-to--}}
+{{#if session.isAuthenticated}}
+	<a {{action 'invalidateSession'}} class="admin-link">Log out</a>
+{{else}}
+	{{#link-to "new-user" class="admin-link"}}Create New User{{/link-to}}
+	{{#link-to "login" class="admin-link"}}Login{{/link-to}}
+{{/if}}
 <section id="NavSection">
 <nav>
 	{{#link-to "about"}}

@@ -1,5 +1,5 @@
 <h1>Blog</h1>
-{{#each model as |blog|}}
+{{#each model.blogs as |blog|}}
 <h3>{{blog.blogTitle}}</h3>
 <div class="body">
 {{#each blog.contents as |content|}}
@@ -20,5 +20,12 @@
 	<div class="comment">{{comment.commentText}}</div>
 	{{/each}}
 </div>
+{{#if session.isAuthenticated}}
+<div class="comment-tool">
+<h4>Share your Thoughts</h4>
+{{textarea value=comment placeholder=model.username}}
+<button {{action "addComment" blog.id}}>Add Comment</button>
+</div>
+{{/if}}
 <br><br>
 {{/each}}
