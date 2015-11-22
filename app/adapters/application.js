@@ -1,7 +1,13 @@
 import DS from 'ember-data';
+import config from '../config/environment';
 import DataAdapterMixin from 'ember-simple-auth/mixins/data-adapter-mixin';
 
-export default DS.JSONAPIAdapter.extend(DataAdapterMixin, {
-	host: 'http://localhost:8888',
+// export default DS.JSONAPIAdapter.extend(DataAdapterMixin, {
+// 	host: config.apiHost,
+// 	authorizer: 'authorizer:oauth2'
+// });
+
+export default DS.RESTAdapter.extend(DataAdapterMixin, {
+	host: config.apiHost,
 	authorizer: 'authorizer:oauth2'
 });

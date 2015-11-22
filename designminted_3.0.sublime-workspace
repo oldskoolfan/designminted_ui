@@ -520,42 +520,34 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/blog.js",
+			"file": "app/adapters/application.js",
 			"settings":
 			{
-				"buffer_size": 153,
+				"buffer_size": 270,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/templates/login.hbs",
+			"file": "app/authorizers/oauth2.js",
 			"settings":
 			{
-				"buffer_size": 420,
+				"buffer_size": 110,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/styles/partials/_blog.sass",
+			"file": "app/authenticators/custom.js",
 			"settings":
 			{
-				"buffer_size": 107,
+				"buffer_size": 952,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/styles/modules/_links.sass",
+			"file": "config/environment.js",
 			"settings":
 			{
-				"buffer_size": 133,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/templates/blog.hbs",
-			"settings":
-			{
-				"buffer_size": 751,
+				"buffer_size": 1566,
 				"line_ending": "Unix"
 			}
 		},
@@ -660,31 +652,28 @@
 		"/Users/andrew/EmberProjects/design-minted/app/components",
 		"/Users/andrew/EmberProjects/design-minted/app/controllers",
 		"/Users/andrew/EmberProjects/design-minted/app/routes",
-		"/Users/andrew/EmberProjects/design-minted/app/styles",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/modules",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/partials",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/globals",
-		"/Users/andrew/EmberProjects/design-minted/app/templates",
 		"/Users/andrew/EmberProjects/design-minted/app/templates/components",
 		"/Users/andrew/EmberProjects/design-minted/app/utils",
 		"/Users/andrew/EmberProjects/design-minted/config",
-		"/Users/andrew/EmberProjects/design-minted/public/assets",
-		"/Users/andrew/EmberProjects/design-minted/tests/unit",
-		"/Users/andrew/EmberProjects/design-minted/tests/unit/adapters",
-		"/Users/andrew/EmberProjects/design-minted/tests/unit/models",
-		"/Users/andrew/EmberProjects/design-minted/tests/unit/routes",
-		"/Users/andrew/EmberProjects/design-minted/tests/unit/serializers"
+		"/Users/andrew/EmberProjects/design-minted/dist"
 	],
 	"file_history":
 	[
+		"/Users/andrew/EmberProjects/design-minted/app/authenticators/oauth2.js",
+		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_blog.sass",
+		"/Users/andrew/EmberProjects/design-minted/app/controllers/login.js",
+		"/Users/andrew/EmberProjects/design-minted/app/styles/modules/_links.sass",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/blog.hbs",
+		"/Users/andrew/EmberProjects/design-minted/app/controllers/blog.js",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/login.hbs",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/modules/_inputs.sass",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/globals/_inputs.sass",
 		"/Users/andrew/EmberProjects/design-minted/app/templates/components/main-nav.hbs",
 		"/Users/andrew/EmberProjects/design-minted/app/routes/blog.js",
 		"/Users/andrew/EmberProjects/design-minted/app/controllers/application.js",
-		"/Users/andrew/EmberProjects/design-minted/app/controllers/login.js",
-		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_blog.sass",
-		"/Users/andrew/EmberProjects/design-minted/app/styles/modules/_links.sass",
 		"/Users/andrew/EmberProjects/design-minted/app/components/main-nav.js",
 		"/Users/andrew/EmberProjects/design-minted/app/templates/application.hbs",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/_body.sass",
@@ -693,11 +682,9 @@
 		"/Users/andrew/EmberProjects/design-minted/app/adapters/application.js",
 		"/Users/andrew/EmberProjects/design-minted/app/authorizers/oauth2.js",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_nav.sass",
-		"/Users/andrew/EmberProjects/design-minted/app/templates/login.hbs",
 		"/Users/andrew/EmberProjects/design-minted/app/controllers/new-user.js",
 		"/Users/andrew/EmberProjects/design-minted/app/authenticators/custom.js",
 		"/Users/andrew/EmberProjects/design-minted/app/utils/login-util.js",
-		"/Users/andrew/EmberProjects/design-minted/app/authenticators/oauth2.js",
 		"/Users/andrew/EmberProjects/design-minted/config/environment.js",
 		"/Users/andrew/EmberProjects/design-minted/app/utils/ajax-util.js",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_new-user.sass",
@@ -720,7 +707,6 @@
 		"/Users/andrew/EmberProjects/design-minted/ember-cli-build.js",
 		"/Users/andrew/EmberProjects/design-minted/sass-convert.sh",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/bourbon/settings/_prefixer.scss",
-		"/Users/andrew/EmberProjects/design-minted/app/templates/blog.hbs",
 		"/Users/andrew/EmberProjects/design-minted/.gitignore",
 		"/Users/andrew/EmberProjects/design-minted/app/helpers/get-year.js",
 		"/Users/andrew/EmberProjects/design-minted/app/templates/components/main-footer.hbs",
@@ -803,8 +789,7 @@
 		"/Applications/nginx/html/cbs/src/main/webapp/sass/main.scss",
 		"/Applications/nginx/html/cbs/src/main/webapp/sass/vendor/_all-vendor.scss",
 		"/Applications/nginx/html/cbs/src/main/webapp/sass/vendor/susy-sass/_susy.scss",
-		"/Applications/nginx/html/cbs/src/main/webapp/sass/vendor/susy-sass/susy/language/_susy.scss",
-		"/Applications/nginx/html/cbs/src/main/webapp/assets/templates/components/pick-row.hbs"
+		"/Applications/nginx/html/cbs/src/main/webapp/sass/vendor/susy-sass/susy/language/_susy.scss"
 	],
 	"find":
 	{
@@ -1028,24 +1013,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/blog.js",
+					"file": "app/adapters/application.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 153,
+						"buffer_size": 270,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								153,
-								153
+								231,
+								231
 							]
 						],
 						"settings":
@@ -1056,143 +1041,52 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/templates/login.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 420,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								420,
-								420
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/styles/partials/_blog.sass",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 107,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								106,
-								106
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 2,
-			"sheets":
-			[
-				{
-					"buffer": 3,
-					"file": "app/styles/modules/_links.sass",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 133,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								84,
-								84
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/templates/blog.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 751,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								597,
-								597
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "app/controllers/login.js",
+					"buffer": 1,
+					"file": "app/authorizers/oauth2.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 827,
+						"buffer_size": 110,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								580,
-								580
+								108,
+								108
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/authenticators/custom.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 952,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								133,
+								90
 							]
 						],
 						"settings":
@@ -1204,7 +1098,71 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "config/environment.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1566,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1545,
+								1545
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/controllers/login.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 827,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -1322,7 +1280,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},

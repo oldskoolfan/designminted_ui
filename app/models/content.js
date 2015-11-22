@@ -5,7 +5,7 @@ export default DS.Model.extend({
 	contentText: DS.attr('string'),
 	contentData: DS.attr('string'),
 	fileExtension: DS.attr('string'),
-	contentType: DS.belongsTo('contentType',{async:true}),
+	contentType: DS.belongsTo('contentType', {async: true}),
 	createdDate: DS.attr('string'),
 	isText: (function () {
 		return this.get('contentType').get('id') === '1';

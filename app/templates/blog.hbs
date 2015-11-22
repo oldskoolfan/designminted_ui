@@ -8,7 +8,7 @@
 	{{/if}}
 	{{#if content.isImage}}
 	<div class="img-wrapper">
-	<img src="http://localhost:8888/get-img/{{content.id}}" alt="image">
+	<img src="{{model.host}}/get-img/{{content.id}}" alt="image">
 	</div>
 	{{/if}}
 {{/each}}

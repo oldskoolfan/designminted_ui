@@ -20,11 +20,11 @@ export default Ember.Controller.extend({
 			let pass = this.get('password');
 			let conf = this.get('confirm');
 			let email = this.get('email');
-			if (name == '' || pass == '' || conf == '' || email == '') {
+			if (name === '' || pass === '' || conf === '' || email === '') {
 				this.set('msg', 'All fields are required');
 				return false;
 			}
-			if (pass != conf) {
+			if (pass !== conf) {
 				this.set('msg', 'Passwords do not match');
 				return false;
 			}
@@ -41,6 +41,8 @@ export default Ember.Controller.extend({
 		this.set('email', '');
 	},
 	newUserCallback: function(response, context) {
-		if (context != null) context.set('msg', response.data.msg);
+		if (context !== null) {
+			context.set('msg', response.data.msg);
+		}
 	}
 });

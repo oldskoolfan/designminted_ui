@@ -52,7 +52,7 @@ module.exports = function(environment) {
 	}
 
 	if (environment === 'production') {
-
+		ENV.apiHost = "http://designminted.com:8080";
 	}
 
 	return ENV;

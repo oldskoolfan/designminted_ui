@@ -5,7 +5,7 @@ import Ember from 'ember';
 const { RSVP, isEmpty, run } = Ember;
 
 export default OAuth2PasswordGrant.extend({
-	serverTokenEndpoint: 'http://localhost:8888/o/token/',
+	serverTokenEndpoint: config.apiHost + '/o/token/',
 	makeRequest(url, data) {
 		const options = {
 			url,
@@ -13,8 +13,6 @@ export default OAuth2PasswordGrant.extend({
 			type:        'POST',
 			dataType:    'json',
 			contentType: 'application/x-www-form-urlencoded',
-			//username: config.clientId,
-			//password: config.secret,
 			beforeSend: function (xhr) {
 			    xhr.setRequestHeader("Authorization", "Basic " + 
 			    	btoa(config.clientId + ":" + config.secret));
