@@ -1,0 +1,33 @@
+<h3>{{blog.blogTitle}}</h3>
+<div class="body">
+{{#each blog.contents as |content|}}
+	{{#if content.isText}}
+	<p>{{{content.contentText}}}</p>
+	{{/if}}
+	{{#if content.isImage}}
+	<div class="img-wrapper">
+	<img src="{{model.host}}/get-img/{{content.id}}" alt="image">
+	</div>
+	{{/if}}
+{{/each}}
+</div>
+<hr>
+<div class="comment-section">
+	<h4>Comments</h4>
+	{{#if blog.hasComments}}
+		{{#each blog.comments as |comment|}}
+		{{#if comment.isApproved}}
+			<div class="comment"><i>At {{moment-format comment.commentDate}}, {{comment.user.username}} said:</i><br>{{comment.commentText}}</div>
+		{{/if}}
+		{{/each}}
+	{{else}}
+		<h5>No comments have been posted yet</h5>
+	{{/if}}
+</div>
+{{#if session.isAuthenticated}}
+<div class="comment-tool">
+{{textarea placeholder=model.placeholder value=commentText}}
+<button {{action "addComment"}}>Add Comment</button>
+</div>
+{{/if}}
+<br><br>

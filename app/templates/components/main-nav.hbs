@@ -1,41 +1,43 @@
 {{#link-to "index" }}<div class="logo"></div>{{/link-to}}
+<div class="admin">
 {{#if session.isAuthenticated}}
 	<a {{action 'invalidateSession'}} class="admin-link">Log out</a>
 {{else}}
-	{{#link-to "new-user" class="admin-link"}}Create New User{{/link-to}}
 	{{#link-to "login" class="admin-link"}}Login{{/link-to}}
+	{{#link-to "new-user" class="admin-link"}}Create New User{{/link-to}}
 {{/if}}
+</div>
 <section id="NavSection">
-<nav>
-	{{#link-to "about"}}
-	<div class="nav-link">
-		<span>About</span>
-		<div class="underline"></div>
-	</div>{{/link-to}}
-	{{#link-to "services"}}
-	<div class="nav-link">
-		<span>Services</span>
-		<div class="underline"></div>
-	</div>{{/link-to}}
-	{{#link-to "portfolio"}}
-	<div class="nav-link">
-		<span>Portfolio</span>
-		<div class="underline"></div>
-	</div>{{/link-to}}
-	{{#link-to "blog"}}
-	<div class="nav-link">
-		<span>Blog</span>
-		<div class="underline"></div>
-	</div>{{/link-to}}
-	{{#link-to "contact"}}
-	<div class="nav-link">
-		<span>Contact</span>
-		<div class="underline"></div>
-	</div>{{/link-to}}
-	{{#link-to "testimonials"}}
-	<div class="nav-link">
-		<span>Testimonials</span>
-		<div class="underline"></div>
-	</div>{{/link-to}}
-</nav>
+	<nav class="desktop">
+		{{#link-to "about"}}
+		<div class="nav-link">
+			<span>About</span>
+			<div class="underline"></div>
+		</div>{{/link-to}}
+		{{#link-to "services"}}
+		<div class="nav-link">
+			<span>Services</span>
+			<div class="underline"></div>
+		</div>{{/link-to}}
+		{{#link-to "portfolio"}}
+		<div class="nav-link">
+			<span>Portfolio</span>
+			<div class="underline"></div>
+		</div>{{/link-to}}
+		{{#link-to "blog"}}
+		<div class="nav-link">
+			<span>Blog</span>
+			<div class="underline"></div>
+		</div>{{/link-to}}
+		{{#link-to "contact"}}
+		<div class="nav-link">
+			<span>Contact</span>
+			<div class="underline"></div>
+		</div>{{/link-to}}
+		{{#link-to "testimonials"}}
+		<div class="nav-link">
+			<span>Testimonials</span>
+			<div class="underline"></div>
+		</div>{{/link-to}}
+	</nav>
 </section>

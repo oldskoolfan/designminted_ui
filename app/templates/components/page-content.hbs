@@ -1,0 +1,13 @@
+<h1>{{model.blogTitle}}</h1>
+<div class="body">
+{{#each model.contents as |content|}}
+	{{#if content.isText}}
+	<p>{{{content.contentText}}}</p>
+	{{/if}}
+	{{#if content.isImage}}
+	<div class="img-wrapper">
+	<img src="{{model.host}}/get-img/{{content.id}}" alt="image">
+	</div>
+	{{/if}}
+{{/each}}
+</div>

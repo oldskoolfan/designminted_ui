@@ -3,14 +3,14 @@
 <section id="LoginForm">
 <div class="form-row">
 	<label for="name">Username:</label>
-	{{input value=username name="name"}}
+	{{input value=username name="name" insert-newline="submitForm"}}
 </div>
 <div class="form-row">
 	<label for="pass">Password:</label>
-	{{input type="password" name="pass" value=password}}
+	{{input type="password" name="pass" value=password insert-newline="submitForm"}}
 </div>
 <div class="form-row">
 	<button {{action "cancel"}}>Cancel</button>
-	<button {{action "authenticate"}}>Log In</button>
+	<button {{action "submitForm"}}>Log In</button>
 </div>
 </section>

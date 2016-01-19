@@ -1,3 +1,27 @@
-<h1>Contact Me</h1>
-<p>Contact me via email for inqueries or estimates at 
-<a href="mailto:designminted@gmail.com">designminted@gmail.com</a></p>
+<section class="contact">
+	<h1>Contact Me</h1>
+	<p>Contact me via email for inqueries or estimates at 
+		<a href="mailto:designminted@gmail.com">designminted@gmail.com</a>
+	</p>
+	<p>Or send me a note here:</p>
+
+	<div>
+		<label for="firstname">First Name:</label>
+		{{input name="firstname" value=firstName}}
+	</div>
+	<div>
+		<label for="lastname">Last Name:</label>
+		{{input name="lastname" value=lastName}}
+	</div>
+	<div>
+		<label for="email">Email:</label>
+		{{input name="email" value=email}}
+	</div>
+	<div>
+		<label for="message">Your message:</label>
+		{{textarea value=message}}
+	</div>
+	<div>
+		<button {{action "cancel"}}>Cancel</button><button {{action "saveMessage"}}>Submit</button>
+	</div>
+</section>

@@ -22,12 +22,21 @@ module.exports = function(environment) {
 		},
 		contentSecurityPolicy: {
 			'default-src': "'none'",
-			'script-src': "'self'",
-			'font-src': "'self'",
+			'script-src': "'self' https://*.google.com https://*.gstatic.com 'unsafe-inline http://*.google-analytics.com",
+			'font-src': "'self' https://*.bootstrapcdn.com",
 			'connect-src': "'self' http://localhost:8888",
-			'img-src': "'self' http://localhost:8888",
-			'style-src': "'self' 'unsafe-inline'",
+			'img-src': "'self' http://localhost:8888 http://*.google-analytics.com",
+			'style-src': "'self' 'unsafe-inline' https://*.bootstrapcdn.com",
 			'media-src': "'self'"
+		},
+		PAGE_TYPES: {
+			HOME: 1,
+			SERVICES: 2,
+			PORTFOLIO: 3,
+			BLOG: 4,
+			CONTACT: 5,
+			TESTIMONIALS: 6,
+			ABOUT: 7
 		}
 	};
 

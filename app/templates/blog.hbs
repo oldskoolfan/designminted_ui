@@ -1,31 +1,4 @@
 <h1>Blog</h1>
 {{#each model.blogs as |blog|}}
-<h3>{{blog.blogTitle}}</h3>
-<div class="body">
-{{#each blog.contents as |content|}}
-	{{#if content.isText}}
-	<p>{{{content.contentText}}}</p>
-	{{/if}}
-	{{#if content.isImage}}
-	<div class="img-wrapper">
-	<img src="{{model.host}}/get-img/{{content.id}}" alt="image">
-	</div>
-	{{/if}}
-{{/each}}
-</div>
-<hr>
-<div class="comment-section">
-	<h4>Comments</h4>
-	{{#each blog.comments as |comment|}}
-	<div class="comment">{{comment.commentText}}</div>
-	{{/each}}
-</div>
-{{#if session.isAuthenticated}}
-<div class="comment-tool">
-<h4>Share your Thoughts</h4>
-{{textarea value=comment placeholder=model.username}}
-<button {{action "addComment" blog.id}}>Add Comment</button>
-</div>
-{{/if}}
-<br><br>
+{{dm-blog blog=blog model=model session=session addComment=(action "createComment")}}
 {{/each}}

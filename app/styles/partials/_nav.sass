@@ -1,17 +1,35 @@
 @media (min-width: $wideScreenBkpt)
 	nav
 		+span-columns(9)
+		margin-top: 200px
 		//@include shift(2);
 
-@media (min-width: $mobileBkpt) and (max-width: $smallScreenBkpt)
-	#NavSection
-		max-width: 745px
-		margin: 0 auto
+@media (min-width: $notMobileBkpt) and (max-width: $smallScreenBkpt)
+	// #NavSection
+	// 	max-width: 745px
+	// 	margin: 0 auto
+	nav
+		+span-columns(10)
+		+shift(1)
+
+@media (min-width: $notMobileBkpt)
+	nav.mobile, #MobileMenuButton
+		display: none
+
+@media (max-width: $mobileBkpt)
+	nav.desktop
+		display: none
+	nav.mobile
+		display: flex
+		width: 100%
+		flex-direction: column
 
 nav
-	margin-top: 200px
-	a
-		display: inline-block
+	&.desktop
+		//margin-top: 200px
+		a
+			display: inline-block
+	a		
 		text-decoration: none
 		font: inherit
 		font-size: 1.2em
@@ -31,3 +49,48 @@ nav
 		&.active
 			.underline
 				background-image: url("/assets/img/underline-highlight.png")
+
+	&.mobile
+		position: fixed
+		z-index: 0
+		top: 0
+		bottom: 0
+
+.desktop-nav
+	padding-top: 30px
+
+.mobile-nav
+	#MobileMenuButton
+		position: fixed
+		right: 10px
+		top: 10px
+		z-index: 2
+		cursor: pointer
+		height: 32px
+		width: 32px
+		i
+			position: absolute
+			top: 0
+			left: 0
+			bottom: 0
+			right: 0
+			text-align: center
+			transition: opacity 500ms linear
+			&.fa-close
+				opacity: 0
+
+	nav
+		background-color: #eee
+		a
+			margin-top: 30px
+			//color: $white
+
+
+
+
+
+
+
+
+
+

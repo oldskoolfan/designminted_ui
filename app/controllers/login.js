@@ -14,18 +14,28 @@ export default Ember.Controller.extend({
 			this.resetForm();
 			this.transitionToRoute('/');
 		},
-		authenticate() {
-			let { username, password } = 
-				this.getProperties('username', 'password');
-			this.get('session').authenticate('authenticator:custom', 
-			username, password).then(() => { 
-				this.get('session').set('username', username);
-				this.transitionToRoute('/');	
-			}, (reason) => {
-				this.set('msg', reason.error);
-			});
-			
+		submitForm() {
+			this.authenticate();
 		}
+	},
+	authenticate: function() {
+		let { username, password } = 
+			this.getProperties('username', 'password');
+		this.get('session').authenticate('authenticator:custom', 
+		username, password).then(() => { 
+			this.store.query('user', {username:username})
+			.then((result) => {
+				//console.log(user);
+				let user = result.get('firstObject');
+				let session = this.get('session');
+				session.set('data.username', username);
+				session.set('data.userid', user.get('id'));
+				this.transitionToRoute('/');
+			});
+
+		}, (reason) => {
+			this.set('msg', reason.error);
+		});
 	},
 	resetForm: function() {
 		this.set('msg', '');

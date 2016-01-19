@@ -1,0 +1,51 @@
+<div id="MobileMenuButton">
+	<i class="fa fa-navicon fa-2x" {{action "toggleNav"}}></i>
+	<i class="fa fa-close fa-2x" {{action "toggleNav"}}></i>
+</div>
+<nav class="mobile">
+	{{#link-to "index"}}
+	<div class="nav-link" {{action "toggleNav"}}>
+		<span>Home</span>
+		<div class="underline"></div>
+	</div>
+	{{/link-to}}
+	{{#link-to "about"}}
+	<div class="nav-link" {{action "toggleNav"}}>
+		<span>About</span>
+		<div class="underline"></div>
+	</div>{{/link-to}}
+	{{#link-to "services"}}
+	<div class="nav-link" {{action "toggleNav"}}>
+		<span>Services</span>
+		<div class="underline"></div>
+	</div>{{/link-to}}
+	{{#link-to "portfolio"}}
+	<div class="nav-link" {{action "toggleNav"}}>
+		<span>Portfolio</span>
+		<div class="underline"></div>
+	</div>{{/link-to}}
+	{{#link-to "blog"}}
+	<div class="nav-link" {{action "toggleNav"}}>
+		<span>Blog</span>
+		<div class="underline"></div>
+	</div>{{/link-to}}
+	{{#link-to "contact"}}
+	<div class="nav-link" {{action "toggleNav"}}>
+		<span>Contact</span>
+		<div class="underline"></div>
+	</div>{{/link-to}}
+	{{#link-to "testimonials"}}
+	<div class="nav-link" {{action "toggleNav"}}>
+		<span>Testimonials</span>
+		<div class="underline"></div>
+	</div>{{/link-to}}
+	
+	<div class="admin">
+	{{#if session.isAuthenticated}}
+		<a {{action 'invalidateSession'}} class="admin-link">Log out</a>
+	{{else}}
+		{{#link-to "login" class="admin-link"}}Login{{/link-to}}
+		{{#link-to "new-user" class="admin-link"}}Create New User{{/link-to}}
+	{{/if}}
+	</div>
+</nav>

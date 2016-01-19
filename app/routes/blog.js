@@ -9,9 +9,18 @@ export default Ember.Route.extend({
 		let session = this.controllerFor('application').get('session');
 		if (session.isAuthenticated) {
 			model.set('username', session.get('username'));
+			model.set('placeholder', "Share your thoughts, " +
+				session.get('data.username') + 
+				"! \n\n(Note that comments will appear when approved by the admin)");
 		}
-		return this.store.findAll("blog")
+		return this.store.findAll('blog')
 		.then(function (result) {
+			result = result.filterBy('pageType', config.PAGE_TYPES.BLOG)
+			result.forEach((blog) => { // only want approved comments
+				var comments = blog.get('comments');
+				comments = comments.filterBy('isApproved', true);
+				blog.set('comments', comments);
+			});
 			model.set('blogs', result);
 			return model;
 		}, function (error) {
