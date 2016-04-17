@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"to",
+				"toggleNavFn"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"back",
+				"background-color: "
+			],
+			[
 				"mar",
 				"margin-bottom: "
 			],
@@ -14,10 +30,6 @@
 			[
 				"data",
 				"dataStr"
-			],
-			[
-				"back",
-				"background-image: "
 			],
 			[
 				"un",
@@ -122,14 +134,6 @@
 			[
 				"get",
 				"getFeatureFromPath"
-			],
-			[
-				"to",
-				"toLowerCase"
-			],
-			[
-				"cur",
-				"currPath"
 			],
 			[
 				"addS",
@@ -510,92 +514,24 @@
 			[
 				"tran",
 				"transitionRoute"
-			],
-			[
-				"insider",
-				"insiders-article"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/controllers/blog.js",
+			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 536,
+				"buffer_size": 2949,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/templates/components/dm-blog.hbs",
+			"file": "public/robots.txt",
 			"settings":
 			{
-				"buffer_size": 742,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/templates/blog.hbs",
-			"settings":
-			{
-				"buffer_size": 141,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "tests/unit/serializers/content-test.js",
-			"settings":
-			{
-				"buffer_size": 411,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/components/dm-blog.js",
-			"settings":
-			{
-				"buffer_size": 260,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/controllers/login.js",
-			"settings":
-			{
-				"buffer_size": 1096,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/authenticators/custom.js",
-			"settings":
-			{
-				"buffer_size": 890,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/partials/_blog.sass",
-			"settings":
-			{
-				"buffer_size": 198,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/models/comment.js",
-			"settings":
-			{
-				"buffer_size": 188,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/serializers/content.js",
-			"settings":
-			{
-				"buffer_size": 152,
+				"buffer_size": 59,
 				"line_ending": "Unix"
 			}
 		}
@@ -685,91 +621,105 @@
 	"expanded_folders":
 	[
 		"/Users/andrew/EmberProjects/design-minted",
-		"/Users/andrew/EmberProjects/design-minted/app",
-		"/Users/andrew/EmberProjects/design-minted/app/adapters",
 		"/Users/andrew/EmberProjects/design-minted/app/authenticators",
 		"/Users/andrew/EmberProjects/design-minted/app/authorizers",
 		"/Users/andrew/EmberProjects/design-minted/app/components",
-		"/Users/andrew/EmberProjects/design-minted/app/controllers",
 		"/Users/andrew/EmberProjects/design-minted/app/helpers",
 		"/Users/andrew/EmberProjects/design-minted/app/models",
 		"/Users/andrew/EmberProjects/design-minted/app/routes",
-		"/Users/andrew/EmberProjects/design-minted/app/serializers",
-		"/Users/andrew/EmberProjects/design-minted/app/styles",
+		"/Users/andrew/EmberProjects/design-minted/app/styles/modules",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/partials",
-		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/globals",
-		"/Users/andrew/EmberProjects/design-minted/app/templates",
 		"/Users/andrew/EmberProjects/design-minted/app/templates/components",
-		"/Users/andrew/EmberProjects/design-minted/app/utils",
-		"/Users/andrew/EmberProjects/design-minted/config",
-		"/Users/andrew/EmberProjects/design-minted/vendor"
+		"/Users/andrew/EmberProjects/design-minted/public"
 	],
 	"file_history":
 	[
-		"/Users/andrew/EmberProjects/design-minted/app/authorizers/oauth2.js",
-		"/Users/andrew/EmberProjects/design-minted/app/authenticators/oauth2.js",
-		"/Users/andrew/EmberProjects/design-minted/app/adapters/application.js",
-		"/Users/andrew/EmberProjects/design-minted/app/models/user.js",
-		"/Users/andrew/EmberProjects/design-minted/app/serializers/comment.js",
-		"/Users/andrew/EmberProjects/design-minted/vendor/moment.min.js",
-		"/Users/andrew/EmberProjects/design-minted/dist/assets/vendor.js",
-		"/Users/andrew/EmberProjects/design-minted/app/index.html",
-		"/Users/andrew/EmberProjects/design-minted/app/templates/blog.hbs",
-		"/Users/andrew/EmberProjects/design-minted/app/controllers/login.js",
+		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_nav.sass",
+		"/Users/andrew/EmberProjects/design-minted/app/styles/_body.sass",
+		"/Users/andrew/EmberProjects/design-minted/app/routes/index.js",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/components/mobile-nav.hbs",
+		"/Users/andrew/EmberProjects/design-minted/config/environment.js",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/testimonials.hbs",
+		"/Users/andrew/EmberProjects/design-minted/app/routes/about.js",
+		"/Users/andrew/EmberProjects/design-minted/app/routes/portfolio.js",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/homepage.hbs",
 		"/Users/andrew/EmberProjects/design-minted/app/routes/blog.js",
-		"/Users/andrew/EmberProjects/design-minted/app/controllers/application.js",
+		"/Users/andrew/EmberProjects/design-minted/app/routes/testimonials.js",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/portfolio.hbs",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/services.hbs",
+		"/Users/andrew/EmberProjects/design-minted/app/routes/services.js",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/about.hbs",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/components/dm-blog.hbs",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/blog.hbs",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/components/page-content.hbs",
+		"/Users/andrew/EmberProjects/design-minted/app/models/blog.js",
+		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_services.sass",
+		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_all-partials.sass",
+		"/Users/andrew/EmberProjects/design-minted/app/helpers/get-year.js",
+		"/Users/andrew/EmberProjects/design-minted/app/utils/ajax-util.js",
+		"/Users/andrew/EmberProjects/design-minted/dist/robots.txt",
+		"/Users/andrew/EmberProjects/design-minted/app/index.html",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/contact.hbs",
+		"/Users/andrew/EmberProjects/design-minted/app/models/contact-form-message.js",
+		"/Users/andrew/EmberProjects/design-minted/app/controllers/contact.js",
+		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_contact.sass",
+		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_blog.sass",
+		"/Users/andrew/EmberProjects/design-minted/app/controllers/blog.js",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/login.hbs",
+		"/Users/andrew/EmberProjects/design-minted/app/styles/modules/_inputs.sass",
+		"/Users/andrew/EmberProjects/design-minted/app/adapters/application.js",
+		"/Users/andrew/EmberProjects/design-minted/app/models/content-format.js",
+		"/Users/andrew/EmberProjects/design-minted/app/serializers/content.js",
+		"/Users/andrew/EmberProjects/design-minted/app/serializers/comment.js",
+		"/Users/andrew/EmberProjects/design-minted/app/models/content.js",
 		"/Users/andrew/EmberProjects/design-minted/app/serializers/blog.js",
-		"/Users/andrew/EmberProjects/design-minted/app/serializers/application.js",
+		"/Users/andrew/EmberProjects/design-minted/app/components/mobile-nav.js",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/components/main-nav.hbs",
+		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_footer.sass",
+		"/Users/andrew/EmberProjects/design-minted/app/controllers/application.js",
+		"/Users/andrew/EmberProjects/design-minted/app/templates/application.hbs",
+		"/Users/andrew/EmberProjects/design-minted/ember-cli-build.js",
+		"/Users/andrew/EmberProjects/design-minted/app/components/main-nav.js",
+		"/Users/andrew/EmberProjects/design-minted/app/styles/modules/_util.sass",
+		"/Users/andrew/EmberProjects/design-minted/app/authenticators/custom.js",
+		"/Users/andrew/EmberProjects/design-minted/app/authenticators/oauth2.js",
+		"/Users/andrew/EmberProjects/design-minted/app/components/main-footer.js",
+		"/Users/andrew/EmberProjects/design-minted/app/components/.gitkeep",
 		"/Users/andrew/EmberProjects/design-minted/app/models/comment.js",
 		"/Users/andrew/EmberProjects/design-minted/app/components/dm-blog.js",
-		"/Users/andrew/EmberProjects/design-minted/app/templates/login.hbs",
-		"/Users/andrew/EmberProjects/design-minted/tmp/funnel-output_path-Oog457jA.tmp/routes/blog.js",
-		"/Users/andrew/EmberProjects/design-minted/app/models/blog.js",
-		"/Users/andrew/EmberProjects/design-minted/app/authenticators/custom.js",
-		"/Users/andrew/EmberProjects/design-minted/app/serializers/content.js",
-		"/Users/andrew/EmberProjects/design-minted/app/helpers/get-year.js",
-		"/Users/andrew/EmberProjects/design-minted/app/components/main-nav.js",
-		"/Users/andrew/EmberProjects/design-minted/app/templates/application.hbs",
-		"/Users/andrew/EmberProjects/design-minted/app/templates/components/main-nav.hbs",
+		"/Users/andrew/EmberProjects/design-minted/app/controllers/login.js",
+		"/Users/andrew/EmberProjects/design-minted/.ember-cli",
+		"/Users/andrew/EmberProjects/design-minted/app/routes/new-user.js",
 		"/Users/andrew/EmberProjects/design-minted/app/routes/login.js",
+		"/Users/andrew/EmberProjects/design-minted/tests/unit/serializers/content-test.js",
+		"/Users/andrew/EmberProjects/design-minted/app/authorizers/oauth2.js",
+		"/Users/andrew/EmberProjects/design-minted/app/models/user.js",
+		"/Users/andrew/EmberProjects/design-minted/vendor/moment.min.js",
+		"/Users/andrew/EmberProjects/design-minted/dist/assets/vendor.js",
+		"/Users/andrew/EmberProjects/design-minted/app/serializers/application.js",
+		"/Users/andrew/EmberProjects/design-minted/tmp/funnel-output_path-Oog457jA.tmp/routes/blog.js",
 		"/Users/andrew/EmberProjects/design-minted/app/helpers/get-comment-prop.js",
 		"/Users/andrew/EmberProjects/design-minted/app/controllers/new-user.js",
-		"/Users/andrew/EmberProjects/design-minted/app/controllers/blog.js",
-		"/Users/andrew/EmberProjects/design-minted/app/routes/new-user.js",
-		"/Users/andrew/EmberProjects/design-minted/app/routes/index.js",
-		"/Users/andrew/EmberProjects/design-minted/app/models/content.js",
 		"/Users/andrew/EmberProjects/design-minted/app/models/content-type.js",
 		"/Users/andrew/EmberProjects/design-minted/tests/unit/serializers/application-test.js",
-		"/Users/andrew/EmberProjects/design-minted/app/models/content-format.js",
-		"/Users/andrew/EmberProjects/design-minted/ember-cli-build.js",
 		"/Users/andrew/EmberProjects/design-minted/package.json",
-		"/Users/andrew/EmberProjects/design-minted/.ember-cli",
-		"/Users/andrew/EmberProjects/design-minted/config/environment.js",
-		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_blog.sass",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/modules/_links.sass",
-		"/Users/andrew/EmberProjects/design-minted/app/styles/modules/_inputs.sass",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/globals/_inputs.sass",
-		"/Users/andrew/EmberProjects/design-minted/app/styles/_body.sass",
-		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_nav.sass",
 		"/Users/andrew/EmberProjects/design-minted/app/utils/login-util.js",
-		"/Users/andrew/EmberProjects/design-minted/app/utils/ajax-util.js",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_new-user.sass",
 		"/Users/andrew/EmberProjects/design-minted/app/templates/new-user.hbs",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_login.sass",
-		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_all-partials.sass",
 		"/Users/andrew/Sites/au2015/ajax_test/index.php",
 		"/Users/andrew/EmberProjects/design-minted/app/app.js",
 		"/Users/andrew/EmberProjects/design-minted/app/models/type.js",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/_admin.sass",
 		"/Users/andrew/EmberProjects/design-minted/app/router.js",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/partials/globals/_all-globals.sass",
-		"/Users/andrew/EmberProjects/design-minted/app/styles/modules/_util.sass",
 		"/Users/andrew/EmberProjects/design-minted/sass-convert.sh",
 		"/Users/andrew/EmberProjects/design-minted/app/styles/bourbon/settings/_prefixer.scss",
 		"/Users/andrew/EmberProjects/design-minted/.gitignore",
 		"/Users/andrew/EmberProjects/design-minted/app/templates/components/main-footer.hbs",
 		"/Users/andrew/EmberProjects/design-minted/tests/unit/routes/homepage-test.js",
-		"/Users/andrew/EmberProjects/design-minted/app/templates/homepage.hbs",
 		"/Users/andrew/EmberProjects/design-minted/app/config/environment.js",
 		"/Users/andrew/EmberProjects/design-minted/app/templates/admin.hbs",
 		"/Users/andrew/EmberProjects/design-minted/app/templates/text-content.hbs",
@@ -811,33 +761,11 @@
 		"/Applications/nginx/html/cbs/src/main/webapp/coffee/routes/article-routes.coffee",
 		"/Applications/nginx/html/cbs/src/main/webapp/assets/templates/picks-iframe.hbs",
 		"/Applications/nginx/html/cbs/src/main/webapp/coffee/routes/picks-iframe-route.coffee",
-		"/Applications/nginx/html/cbs/src/main/webapp/coffee/components/pick-grades-component.coffee",
-		"/Applications/nginx/html/cbs/src/main/webapp/assets/templates/components/daily-fantasy-games.hbs",
-		"/Applications/nginx/html/cbs/src/main/webapp/coffee/components/daily-fantasy-games-component.coffee",
-		"/Applications/nginx/html/cbs/src/main/webapp/assets/templates/homepage.hbs",
-		"/Applications/nginx/html/cbs/src/main/webapp/assets/templates/landing.hbs",
-		"/Applications/nginx/html/cbs/src/main/webapp/coffee/components/games-iframe-component.coffee",
-		"/Applications/nginx/html/cbs/src/main/webapp/coffee/main.coffee",
-		"/Applications/nginx/html/cbs/src/main/webapp/assets/templates/application.hbs",
-		"/Applications/nginx/html/cbs/src/main/webapp/coffee/controllers/top-nav-controller.coffee",
-		"/Applications/nginx/html/cbs/src/main/webapp/sass/modules/_tables.scss",
-		"/Applications/nginx/html/cbs/src/main/webapp/sass/partials/_body.scss",
-		"/Applications/nginx/html/cbs/src/main/webapp/coffee/controllers/homepage-controller.coffee",
-		"/Applications/nginx/html/cbs/src/main/webapp/coffee/controllers/application-controller.coffee",
-		"/Applications/nginx/html/cbs/src/main/webapp/coffee/routes/homepage-route.coffee",
-		"/Applications/nginx/html/cbs/src/main/webapp/coffee/utils/ad-utils.coffee",
-		"/Applications/nginx/html/cbs/src/main/webapp/coffee/routes/app-route.coffee",
-		"/Applications/nginx/html/cbs/src/main/webapp/coffee/routes/insiders-route.coffee",
-		"/Applications/nginx/html/cbs/src/main/webapp/coffee/controllers/insiders-controller.coffee",
-		"/Applications/nginx/html/cbs/src/main/webapp/sass/modules/_all-modules.scss",
-		"/Applications/nginx/html/cbs/src/main/webapp/sass/modules/_colors.scss",
-		"/Applications/nginx/html/cbs/src/main/webapp/sass/partials/components/_newsletter-signup.scss",
-		"/Applications/nginx/html/cbs/src/main/webapp/sass/modules/_data-tables.scss",
-		"/Applications/nginx/html/cbs/test.html"
+		"/Applications/nginx/html/cbs/src/main/webapp/coffee/components/pick-grades-component.coffee"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -862,6 +790,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"moment-format",
 			"beforesend",
 			"placeholder",
 			"bmtFQmR1d0tMRWNqekRnMEJLT3g5NklweVFkcFV4aXUxNDVQWHU2Tjo",
@@ -988,8 +917,7 @@
 			"moment",
 			"id=\"Help\"",
 			"Help",
-			"helpsmall",
-			"font-awesome"
+			"helpsmall"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1057,208 +985,32 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/blog.js",
+					"file": "app/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 536,
+						"buffer_size": 2949,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								531,
-								531
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/templates/components/dm-blog.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 742,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								458,
-								458
+								1838,
+								1838
 							]
 						],
 						"settings":
 						{
 							"is_xml": false,
-							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/templates/blog.hbs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 141,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								94,
-								104
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Handlebars/grammars/Handlebars.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "tests/unit/serializers/content-test.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 411,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 2,
-			"sheets":
-			[
-				{
-					"buffer": 4,
-					"file": "app/components/dm-blog.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 260,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								201,
-								201
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "app/controllers/login.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1096,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								331,
-								331
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "app/authenticators/custom.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 890,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1268,87 +1020,32 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "app/styles/partials/_blog.sass",
+					"buffer": 1,
+					"file": "public/robots.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 198,
+						"buffer_size": 59,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								198,
-								198
+								59,
+								59
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"is_xml": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "app/models/comment.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 188,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								188,
-								188
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "app/serializers/content.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 152,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -1371,18 +1068,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
@@ -1466,7 +1156,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 	},
