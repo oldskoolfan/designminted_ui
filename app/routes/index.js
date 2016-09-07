@@ -5,11 +5,10 @@ export default Ember.Route.extend({
 	templateName: 'homepage',
 	pageType: config.PAGE_TYPES.HOME,
 	model: function() {
-		let context = this;
 		return this.store.findAll('blog')
-		.then(function(blogs) {
+		.then((blogs)=> {
 			let model = blogs
-				.filterBy('pageType', context.pageType)
+				.filterBy('pageType', this.pageType)
 				.get('firstObject');
 			model.set('host', config.apiHost);
 			return model;

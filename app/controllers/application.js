@@ -9,6 +9,8 @@ export default Ember.Controller.extend({
 	},
 	init: function() {
 		let userId = this.get('session').get('data.userid');
-		this.store.findRecord('user', userId);
+		if (userId) {
+			this.store.findRecord('user', userId);
+		}
 	}
 });
