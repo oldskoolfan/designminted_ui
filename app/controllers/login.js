@@ -19,13 +19,12 @@ export default Ember.Controller.extend({
 		}
 	},
 	authenticate: function() {
-		let { username, password } = 
+		let { username, password } =
 			this.getProperties('username', 'password');
-		this.get('session').authenticate('authenticator:custom', 
-		username, password).then(() => { 
+		this.get('session').authenticate('authenticator:custom',
+		username, password).then(() => {
 			this.store.query('user', {username:username})
 			.then((result) => {
-				//console.log(user);
 				let user = result.get('firstObject');
 				let session = this.get('session');
 				session.set('data.username', username);
@@ -34,7 +33,16 @@ export default Ember.Controller.extend({
 			});
 
 		}, (reason) => {
-			this.set('msg', reason.error);
+			let msg;
+			switch(reason.error) {
+				case 'invalid_client':
+					msg = 'Invalid username or password';
+					break;
+				default:
+					msg = 'Login unsuccessful';
+					break;
+			}
+			this.set('msg', msg);
 		});
 	},
 	resetForm: function() {

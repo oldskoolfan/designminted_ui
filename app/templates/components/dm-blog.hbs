@@ -1,4 +1,4 @@
-<h3>{{blog.blogTitle}}</h3>
+<h3><span>{{blog.blogTitle}}</span><small>Posted at {{moment-format blog.pubDate}}</small></h3>
 <div class="body">
 {{#each blog.contents as |content|}}
 	{{#if content.isText}}

@@ -7,6 +7,8 @@ module.exports = function(environment) {
     rootURL: '/',
     locationType: 'auto',
 	apiHost: 'http://localhost:8888',
+	clientId: 'nkEBduwKLEcjzDg0BKOx96IpyQdpUxiu145PXu6N',
+	secret: 'JEi5w8aHQ3nWt7FAP1uXjpiUogn9YLCcJDG4psk7hdYGPUeByCTKwujjiQxV0nY4B54lVM7HciQvlc5Xw4kIPiajsGuisMgJGtai7O7rQgZ9qUM7FR0K0bBJpBG5yHZa',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -35,6 +37,9 @@ module.exports = function(environment) {
 		CONTACT: 5,
 		TESTIMONIALS: 6,
 		ABOUT: 7
+	},
+	moment: {
+		outputFormat: 'MMM Do YYYY, h:mm a'
 	}
   };
 

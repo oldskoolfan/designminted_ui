@@ -1,16 +1,27 @@
-.img-wrapper img
-	width: 100%
-
-.comment-tool
-	textarea
+.blog
+	h3 small
+		float: right
+		line-height: 22px
+	.img-wrapper img
 		width: 100%
-		height: 100px
+
+	.comment-tool
+		textarea
+			width: 100%
+			height: 100px
+			margin-bottom: 30px
+
+	.comment-section
 		margin-bottom: 30px
 
-.comment-section
-	margin-bottom: 30px
+	.comment
+		margin-bottom: 20px
+		i
+			font-size: 0.8em
 
-.comment
-	margin-bottom: 20px
-	i
-		font-size: 0.8em
+@media (max-width: $mobileBkpt)
+	.blog
+		h3 span, h3 small
+			float: none !important
+			margin: 5px 0
+			display: block

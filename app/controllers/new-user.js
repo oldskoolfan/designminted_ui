@@ -29,7 +29,7 @@ export default Ember.Controller.extend({
 				return false;
 			}
 			let loginUtil = LoginUtil.create();
-			loginUtil.createNewUser(name, email, pass, 
+			loginUtil.createNewUser(name, email, pass,
 				this.newUserCallback, this);
 		}
 	},
@@ -42,7 +42,7 @@ export default Ember.Controller.extend({
 	},
 	newUserCallback: function(response, context) {
 		if (context !== null) {
-			context.set('msg', response.data.msg);
+			context.set('msg', response.newUserView.msg);
 		}
 	}
 });

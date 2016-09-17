@@ -1,6 +1,7 @@
 {{#link-to "index" }}<div class="logo"></div>{{/link-to}}
 <div class="admin">
 {{#if session.isAuthenticated}}
+	<p id="greeting">Hello, {{session.data.username}}!</p>
 	<a {{action 'invalidateSession'}} class="admin-link">Log out</a>
 {{else}}
 	{{#link-to "login" class="admin-link"}}Login{{/link-to}}

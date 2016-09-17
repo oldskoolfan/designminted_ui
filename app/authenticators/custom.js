@@ -14,20 +14,10 @@ export default OAuth2PasswordGrant.extend({
 			dataType:    'json',
 			contentType: 'application/x-www-form-urlencoded',
 			beforeSend: function (xhr) {
-			    xhr.setRequestHeader("Authorization", "Basic " + 
+			    xhr.setRequestHeader("Authorization", "Basic " +
 			    	btoa(config.clientId + ":" + config.secret));
 			}
 		};
-		const clientId = this.get('clientId');
-
-		if (!isEmpty(clientId)) {
-			const base64ClientId = window.btoa(clientId.concat(':'));
-			Ember.merge(options, {
-				headers: {
-					Authorization: `Basic ${base64ClientId}`
-				}
-			});
-		}
 
 		return Ember.$.ajax(options);
   	}

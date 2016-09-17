@@ -1,13 +1,9 @@
 @media (min-width: $wideScreenBkpt)
 	nav
 		+span-columns(9)
-		margin-top: 200px
-		//@include shift(2);
+		margin-top: 170px
 
 @media (min-width: $notMobileBkpt) and (max-width: $smallScreenBkpt)
-	// #NavSection
-	// 	max-width: 745px
-	// 	margin: 0 auto
 	nav
 		+span-columns(10)
 		+shift(1)
@@ -23,17 +19,18 @@
 		display: flex
 		width: 100%
 		flex-direction: column
+	p#greeting
+		display: none
 
 nav
 	&.desktop
-		//margin-top: 200px
 		a
 			display: inline-block
-	a		
+	a
 		text-decoration: none
 		font: inherit
 		font-size: 1.2em
-		color: $darkGrayText
+		color: $medGrayText
 		&:hover
 			color: $mainOrange
 		.nav-link
@@ -83,14 +80,3 @@ nav
 		background-color: #eee
 		a
 			margin-top: 30px
-			//color: $white
-
-
-
-
-
-
-
-
-
-

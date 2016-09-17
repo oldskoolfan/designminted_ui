@@ -15,9 +15,9 @@ export default Ember.Controller.extend({
 			console.debug("email: " + email);
 			console.debug("message: " + message);
 
-			if ((firstName == null || firstName === '') || 
-				(lastName == null || lastName === '') || 
-				(email == null || email === '') || 
+			if ((firstName == null || firstName === '') ||
+				(lastName == null || lastName === '') ||
+				(email == null || email === '') ||
 				(message == null || message === '')) {
 				return alert('All fields are required');
 			}
@@ -30,17 +30,22 @@ export default Ember.Controller.extend({
 				createdDate: new Date()
 			});
 
-			contactMsg.save().then(function() {
+			contactMsg.save().then(()=> {
 				alert('Message saved successfully!');
+				this.cancelForm();
 			}, function(err) {
 				alert("Problem saving message", err);
 			});
 		},
 		cancel() {
-			this.set('firstName', null);
-			this.set('lastName', null);
-			this.set('email', null);
-			this.set('message', null);
+			this.cancelForm();
+			this.transitionToRoute('index');
 		}
+	},
+	cancelForm() {
+		this.set('firstName', null);
+		this.set('lastName', null);
+		this.set('email', null);
+		this.set('message', null);
 	}
 });
