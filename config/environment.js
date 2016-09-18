@@ -39,7 +39,7 @@ module.exports = function(environment) {
 		ABOUT: 7
 	},
 	moment: {
-		outputFormat: 'MMM Do YYYY, h:mm a'
+		outputFormat: 'MMM Do YYYY, [at] h:mm a'
 	}
   };
 
