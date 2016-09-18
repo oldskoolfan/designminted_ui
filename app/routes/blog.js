@@ -2,7 +2,7 @@ import Ember from 'ember';
 import config from '../config/environment';
 
 export default Ember.Route.extend({
-	model: function () {
+	getBlogModel() {
 		let model = Em.Object.create({
 			host: config.apiHost
 		});
@@ -10,10 +10,14 @@ export default Ember.Route.extend({
 		if (session.isAuthenticated) {
 			model.set('username', session.get('username'));
 			model.set('placeholder', "Share your thoughts, " +
-				session.get('data.username') + 
+				session.get('data.username') +
 				"! \n\n(Note that comments will appear when approved by the admin)");
 		}
-		return this.store.findAll('blog')
+		return model;
+	},
+	model: function () {
+		let model = this.getBlogModel();
+		return this.get('store').findAll('blog')
 		.then(function (result) {
 			result = result.filterBy('pageType', config.PAGE_TYPES.BLOG)
 			result.forEach((blog) => { // only want approved comments
@@ -26,6 +30,6 @@ export default Ember.Route.extend({
 		}, function (error) {
 			console.error(error);
 		});
-		
+
 	}
 });

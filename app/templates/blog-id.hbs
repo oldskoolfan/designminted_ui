@@ -1,4 +1,2 @@
 <h1>My Blog</h1>
-{{#each model.blogs as |blog|}}
 {{dm-blog blog=blog model=model session=session addComment=(action "createComment")}}
-{{/each}}
