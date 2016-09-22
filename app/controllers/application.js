@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
 	actions: {
 		invalidateSession() {
 			this.get('session').invalidate();
-		}
+		}		
 	},
 	init: function() {
 		let userId = this.get('session').get('data.userid');

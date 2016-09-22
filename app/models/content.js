@@ -5,13 +5,13 @@ export default DS.Model.extend({
 	contentText: DS.attr('string'),
 	contentData: DS.attr('string'),
 	fileExtension: DS.attr('string'),
-	contentType: DS.belongsTo('contentType', {async: true}),
+	contentType: DS.belongsTo('contentType', {async:false}),
 	createdDate: DS.attr('string'),
 	isText: (function () {
-		return this.get('contentType').get('id') === '1';
-	}).property('contentType.id'),
+		return this.get('contentType').get('typeName') === 'TEXT';
+	}).property('contentType.typeName'),
 	isImage: (function () {
-		return this.get('contentType').get('id') === '2';
-	}).property('contentType.id'),
+		return this.get('contentType').get('typeName') === 'IMAGE';
+	}).property('contentType.typeName'),
 	blog: DS.belongsTo('blog')
 });
