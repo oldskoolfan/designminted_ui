@@ -6,7 +6,10 @@
 	{{/if}}
 	{{#if content.isImage}}
 	<div class="img-wrapper">
-	<img src="{{model.host}}/get-img/{{content.id}}" alt="image">
+	<figure>
+		<img src="{{model.host}}/get-img/{{content.id}}" alt="image">
+		<figcaption>{{content.contentCaption}}</figcaption>
+	</figure>
 	</div>
 	{{/if}}
 {{/each}}
